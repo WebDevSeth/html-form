@@ -5,69 +5,59 @@
   height: 300px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
-  display:inline-flex;
+  display: inline-flex;
   margin: 10px;
   margin-top: 55px;
   border: 12px outset crimson;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    /* Remove this if you don't want the 3D effect */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* Remove this if you don't want the 3D effect */
 }
 
-h1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 75px;
-    font-size: 300%;
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 75px;
+  font-size: 300%;
 }
 
-
-li{
-  display:inline-block;
+li {
+  display: inline-block;
   padding: 20px;
   padding-top: 0%;
-
-
 }
 
-a{
-
+a {
   text-decoration: none;
-  color:crimson;
+  color: crimson;
   font-family: sans-serif;
   padding-top: 30px;
   padding-bottom: 30px;
-  text-shadow:black;
+  text-shadow: black;
   font-family: sans-serif;
-font-weight: bold;
-
-
+  font-weight: bold;
 }
 
-a:hover{
-  color:yellow;
-
+a:hover {
+  color: yellow;
 }
 
-nav{
-    margin-top: 0;
-    position: sticky;
-    font-size: 14px;
-
-
+nav {
+  margin-top: 0;
+  position: sticky;
+  font-size: 14px;
 }
 
-ul{
-  padding:20px ;
+ul {
+  padding: 20px;
   top: 0;
   left: 35%;
   right: 0;
 }
 
-body{
-    text-align: center;
-    background-image: url(https://i.pinimg.com/originals/73/4f/b6/734fb6ed44aa280fe7546f7035363faf.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  text-align: center;
+  background-image: url(https://wallpaperaccess.com/full/1567666.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* This container is needed to position the front and back side */
@@ -87,7 +77,8 @@ body{
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -107,9 +98,20 @@ body{
   color: white;
   transform: rotateY(180deg);
   height: 300px;
-  
 }
 
-h1:hover{
-    color: yellow;
+h1:hover {
+  color: yellow;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 10px;
+  text-align: center;
 }
