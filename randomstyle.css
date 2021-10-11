@@ -22,7 +22,7 @@ h1 {
 li {
   display: inline-block;
   padding: 20px;
-  padding-top: 0%;
+  margin-top: 15px;
 }
 
 a {
@@ -34,6 +34,7 @@ a {
   text-shadow: black;
   font-family: sans-serif;
   font-weight: bold;
+  margin: 50px;
 }
 
 a:hover {
@@ -44,6 +45,7 @@ nav {
   margin-top: 0;
   position: sticky;
   font-size: 14px;
+  
 }
 
 ul {
@@ -54,10 +56,18 @@ ul {
 }
 
 body {
-  text-align: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: whitesmoke;
   background-image: url(https://wallpaperaccess.com/full/1567666.png);
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  margin: 50px 0px;
+  padding: 0px;
+  text-align: center;
+  margin-top: 0;
 }
 
 /* This container is needed to position the front and back side */
