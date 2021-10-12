@@ -1,5 +1,5 @@
 label {
-  color: hotpink;
+  color: lightskyblue;
   font-family: sans-serif;
   font-weight: bold;
   font-size: larger;
@@ -14,16 +14,14 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  margin: 50px 0px;
+
   padding: 0px;
   text-align: center;
   margin-top: 0;
 }
 
-h1 {
-  color: black;
-  margin-bottom: 250px;
-  background-color: hotpink;
+.indbod {
+  background-image: url(https://i.pinimg.com/originals/7f/7f/28/7f7f2882899755a705a2953b6fcfc263.gif);
 }
 
 .h2 {
@@ -65,10 +63,10 @@ table {
   width: 350px;
   position: sticky;
   border-radius: 50%;
-  border: 12px solid crimson;
+  border: 12px solid lightskyblue;
   margin-bottom: 15px;
   margin-top: 15px;
-  background-color: red;
+  background-color: transparent;
 }
 
 iframe {
@@ -76,31 +74,6 @@ iframe {
   border-radius: 25%;
   height: 185px;
   width: 185px;
-}
-
-li {
-  display: inline-block;
-  padding: 20px;
-}
-
-ul {
-  padding: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: crimson;
-  font-family: sans-serif;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-shadow: black;
-  font-family: sans-serif;
-  font-weight: bold;
-  margin: 25px;
-}
-
-a:hover {
-  color: yellow;
 }
 
 table:hover {
@@ -112,17 +85,14 @@ table:hover {
 }
 
 .pic2 {
-  padding-bottom: 15px;
-  width: 275px;
-  height: 275px;
-  padding-top: 15px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  position: sticky;
 }
 
 @keyframes mymove {
   from {
-    background-color: crimson;
+    background-color: darkcyan;
   }
   to {
     background-color: black;
@@ -131,6 +101,7 @@ table:hover {
 
 button {
   margin-right: 15px;
+
 }
 
 button:hover {
@@ -141,14 +112,13 @@ input:hover {
   color: red;
 }
 
-p {
+.indexp {
   font-family: sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  color: crimson;
+  font-size: 25px;
+  color: #39ff14;
+  font-weight: bolder;
   background-color: black;
-  border: 2px outset crimson;
-  padding: 5px;
+  padding-top: 0%;
 }
 
 th {
@@ -158,7 +128,7 @@ th {
 }
 
 table {
-  border-color: crimson;
+  border-color: lightskyblue;
   border-style: ridge;
 }
 
@@ -169,6 +139,8 @@ table {
 body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -183,7 +155,7 @@ body {
   content: "";
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: silver;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -205,8 +177,8 @@ body {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: black;
-  border: 4px solid crimson;
+  background-color: lightskyblue;
+  border: 4px solid darkcyan;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -231,9 +203,9 @@ body {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid silver;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent silver;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -245,9 +217,9 @@ body {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid silver;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent silver transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -258,7 +230,7 @@ body {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: silver;
   position: relative;
   border-radius: 6px;
   padding: 1px;
@@ -274,8 +246,6 @@ body {
   /* Full-width containers */
   .container {
     width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
   }
 
   /* Make sure that all arrows are pointing leftwards */
@@ -298,12 +268,17 @@ body {
   }
 }
 
+.timeline {
+  animation: ease-in;
+  animation-duration: 5s;
+}
+
 .p1 {
   font-family: sans-serif;
   background-color: transparent;
   border: 0px;
   color: black;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 h2 {
@@ -345,4 +320,202 @@ h2 {
     left: 0;
     -webkit-transform: rotateY(0deg);
   }
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: skyblue;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+h1:hover {
+  color: silver;
+}
+
+a:hover {
+  color: darkcyan;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: darkcyan;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.grid-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  row-gap: 60px;
+  column-gap: 60px;
+}
+
+.grid-item {
+  display: grid;
+  margin: 10px;
+}
+
+p {
+  font-size: large;
+  padding-top: 30px;
+}
+
+/***** Slide Right *****/
+.lefttoright {
+  animation: 500ms slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+/***** Slide Left *****/
+.righttoleft {
+  animation: 500ms slide-left;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+footer {
+  position: relative;
+  bottom: 0%;
+  width: 100%;
+  text-align: center;
+  padding-top: 4px;
+  color: honeydew;
+  background-color: rgba(192, 192, 192, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+
+}
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  display: inline-block;
+}
+
+.fa {
+  display: inline-block;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
 }
